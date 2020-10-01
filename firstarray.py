@@ -1,0 +1,31 @@
+import numpy as np
+# import random
+# fine=[1,2,3,4,5,6]
+# a=np.array([[1,5,3],[4,2,6]])
+# v= np.random()
+# print(v)
+# print(sorted([a]))
+# print(fine)
+# a=np.ones((51,51))
+# print(a)
+
+# vec=np.linspace(0,40,5)
+# print(vec)
+
+# arr=np.arange(2,20)
+# print(arr)
+# print(type(arr[6]+1))
+# print(type(np))
+# arr=np.empty([3,2], dtype=float)
+# print(arr)
+# arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+# # arr = np.arange(20)
+# print(arr[0:1,0:4])
+# # sli= slice(1,10,4)
+# # print(arr[2:9])
+# # print(arr[10:])
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(arr)
+np.savetxt("save.csv", arr, delimiter=',')
+new_arr = np.genfromtxt("save.csv", delimiter=',')
+print(new_arr)

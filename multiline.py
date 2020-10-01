@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+x=range(5)
+plt.plot(x,[i for i in x], label='linear')
+plt.plot(x,[i*i for i in x], label='Square')
+plt.plot(x,[i*i*i for i in x], label='cube')
+plt.legend()
+plt.grid()
+plt.xlim(1.0)
+plt.ylim(0.9)
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('First Graph')
+# p=[i**2 for i in x]
+# print(p)
+# plt.plot([i**10 for i in x])
+# v=[i**10 for i in x]
+# print(v)
+# plt.plot([i**20 for i in x])
+plt.show()
+plt.savefig('firstgraph.png')
